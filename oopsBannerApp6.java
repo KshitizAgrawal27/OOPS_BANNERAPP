@@ -1,0 +1,48 @@
+public class OOPSBannerApp {
+
+    // Method to generate the pattern for the letter 'O'
+    public static String[] getOPattern() {
+        return new String[] {
+            " OOO ",
+            "O   O",
+            "O   O",
+            "O   O",
+            " OOO "
+        };
+    }
+
+    // Method to generate the pattern for the letter 'P'
+    public static String[] getPPattern() {
+        return new String[] {
+            "PPP  ",
+            "P  P ",
+            "PPP  ",
+            "P    ",
+            "P    "
+        };
+    }
+
+    // Method to generate the pattern for the letter 'S'
+    public static String[] getSPattern() {
+        return new String[] {
+            " SSS ",
+            "S    ",
+            " SSS ",
+            "    S",
+            " SSS "
+        };
+    }
+
+    // Main method to run the banner display
+    public static void main(String[] args) {
+        // Declare String Arrays to hold patterns for each letter
+        String[] oPattern = getOPattern();
+        String[] pPattern = getPPattern();
+        String[] sPattern = getSPattern();
+
+        // Assemble each line of the banner to create the visual effect for "OOPS"
+        for (int i = 0; i < oPattern.length; i++) {
+            System.out.println(oPattern[i] + " " + oPattern[i] + " " + pPattern[i] + " " + sPattern[i]);
+        }
+    }
+}
